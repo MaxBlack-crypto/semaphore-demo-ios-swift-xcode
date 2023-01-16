@@ -58,3 +58,11 @@ blocks:
             - xcrun simctl list
             - bundle exec fastlane screenshots
             - artifact push job screenshots
+  - name: 'Block #4'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands: []
+promotions:
+  - name: Promotion 1
+    pipeline_file: pipeline_2.yml
